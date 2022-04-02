@@ -1,0 +1,14 @@
+
+State Machine - |RS232|DetectorFlanco:i6|estado_act
+Name estado_act.Esp1 estado_act.Pulso estado_act.Esp0 
+estado_act.Esp0 0 0 0 
+estado_act.Pulso 0 1 1 
+estado_act.Esp1 1 0 1 
+
+State Machine - |RS232|Control:i5|estado_act
+Name estado_act.Stop estado_act.Paridad estado_act.Registro estado_act.Start estado_act.Inicio 
+estado_act.Inicio 0 0 0 0 0 
+estado_act.Start 0 0 0 1 1 
+estado_act.Registro 0 0 1 0 1 
+estado_act.Paridad 0 1 0 0 1 
+estado_act.Stop 1 0 0 0 1 

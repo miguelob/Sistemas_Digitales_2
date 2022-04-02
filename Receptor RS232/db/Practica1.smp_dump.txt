@@ -1,0 +1,7 @@
+
+State Machine - |RS232|Control:i3|estado_act
+Name estado_act.Final estado_act.Registro estado_act.Start estado_act.Inicio 
+estado_act.Inicio 0 0 0 0 
+estado_act.Start 0 0 1 1 
+estado_act.Registro 0 1 0 1 
+estado_act.Final 1 0 0 1 

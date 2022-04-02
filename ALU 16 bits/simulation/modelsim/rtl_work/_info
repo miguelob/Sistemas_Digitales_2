@@ -1,0 +1,262 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\oleob\OneDrive - Universidad Pontificia Comillas\ICAI_2GITT\Sistemas_Digitales_2\Pract4\simulation\modelsim
+Ealu
+Z1 w1551787280
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\oleob\OneDrive - Universidad Pontificia Comillas\ICAI_2GITT\Sistemas_Digitales_2\Pract4\simulation\modelsim
+Z6 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/ALU.vhd
+Z7 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/ALU.vhd
+l0
+L5
+VEHZ<J2G_6>Vi9I6O6O9Tl1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1551894850.156000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/ALU.vhd|
+Z11 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/ALU.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 a7;bgekIhKgo=imWfNBdE2
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 EHZ<J2G_6>Vi9I6O6O9Tl1
+l78
+L15
+VRLIgiR`HXNoMAk_>eTIC01
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 c@:9dKgLSOlG7[cbCcW0U0
+!i10b 1
+Ealu_vhd_tst
+Z14 w1551885490
+R2
+R3
+R4
+R5
+Z15 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/simulation/modelsim/ALU.vht
+Z16 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/simulation/modelsim/ALU.vht
+l0
+L31
+V3YZHMJ@KiTWI@I9]Sf:i_0
+!s100 Tb=z3:RMNbN9f?V2l<Q3G1
+R8
+31
+!i10b 1
+Z17 !s108 1551894850.298000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/simulation/modelsim/ALU.vht|
+Z19 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/simulation/modelsim/ALU.vht|
+R12
+R13
+Aalu_arch
+R2
+R3
+R4
+DEx4 work 11 alu_vhd_tst 0 22 3YZHMJ@KiTWI@I9]Sf:i_0
+l54
+L33
+VF7N=Z^A6bY^8LF7hbn<dL0
+!s100 =RdD7;mdjhZ[DZ5j0oUVi3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13
+Emulti16con
+Z20 w1551785398
+R2
+R3
+R4
+R5
+Z21 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Con.vhd
+Z22 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Con.vhd
+l0
+L5
+Vh<A_Lze=4SJWZ0LG20m_>1
+R8
+31
+Z23 !s108 1551894849.275000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Con.vhd|
+Z25 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Con.vhd|
+R12
+R13
+!s100 1Gz[>:31mD;LHocl?FYmV1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 multi16con 0 22 h<A_Lze=4SJWZ0LG20m_>1
+l18
+L15
+VJKROUSEc4e8[4@lSnfI:g0
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 TO@FgRMi=;b`Gg26dN3]<1
+!i10b 1
+Emulti16sin
+Z26 w1551882651
+R2
+R3
+R4
+R5
+Z27 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Sin.vhd
+Z28 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Sin.vhd
+l0
+L5
+V7hE8^;=K?KzV9N2kZ;Q<`3
+R8
+31
+Z29 !s108 1551894849.869000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Sin.vhd|
+Z31 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Multi16Sin.vhd|
+R12
+R13
+!s100 8^C2GDTLlXmW^Ym=@k7E_1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 multi16sin 0 22 7hE8^;=K?KzV9N2kZ;Q<`3
+l18
+L15
+VLQ`2WlIeogUjN0c1bB]iX1
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 Uo6_DFT2GLMj[XK65TURV1
+!i10b 1
+Enand_op
+Z32 w1551785373
+R2
+R3
+R4
+R5
+Z33 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/nand_op.vhd
+Z34 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/nand_op.vhd
+l0
+L5
+V2AjM[HJUXz[JQeaeQ<e]M1
+R8
+31
+Z35 !s108 1551894850.017000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/nand_op.vhd|
+Z37 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/nand_op.vhd|
+R12
+R13
+!s100 Wd[`eWQS0ACm=>bVzelhW3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 nand_op 0 22 2AjM[HJUXz[JQeaeQ<e]M1
+l16
+L15
+VNK?D6Zea^UOBSHO9H_a1]2
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 T74;mHcFil=k?4cc9AF`n0
+!i10b 1
+Esumador1bit
+Z38 w1551684279
+R3
+R4
+R5
+Z39 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Sumador1Bit.vhd
+Z40 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Sumador1Bit.vhd
+l0
+L6
+Vc^LlSd35fXjlB`3eokb^e1
+R8
+31
+Z41 !s108 1551894849.596000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Sumador1Bit.vhd|
+Z43 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/Sumador1Bit.vhd|
+R12
+R13
+!s100 0VS2I:fmMc2:ed:3nYfMJ1
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 11 sumador1bit 0 22 c^LlSd35fXjlB`3eokb^e1
+l17
+L15
+V@Y_V0ME[9z`GDIU4?UaVj3
+R8
+31
+R41
+R42
+R43
+R12
+R13
+!s100 <>4;Sfo38M6DVBWP38?j21
+!i10b 1
+Esumadorrestador16bits
+Z44 w1551872836
+R2
+R3
+R4
+R5
+Z45 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/SumadorRestador16Bits.vhd
+Z46 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/SumadorRestador16Bits.vhd
+l0
+L7
+VTN5cQ`I>bgK9[Fb4ijnGl2
+R8
+31
+Z47 !s108 1551894849.727000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/SumadorRestador16Bits.vhd|
+Z49 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/Pract4/SumadorRestador16Bits.vhd|
+R12
+R13
+!s100 DbdWE_3i<Hb0QzJSlDj2L3
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 21 sumadorrestador16bits 0 22 TN5cQ`I>bgK9[Fb4ijnGl2
+l31
+L18
+Vl:^>Tn6`m=mR::@c^o@Kj0
+R8
+31
+R47
+R48
+R49
+R12
+R13
+!s100 dQ9;HQdNQ>nTX`Kh1Qoc;3
+!i10b 1

@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ControlMux is
+port(
+	clk	:in std_logic;
+	reset_n	:in std_logic;
+	fin		:in std_logic;
+	sel		:out std_logic_vector (2 downto 0));
+end ControlMux;
+
+architecture behavioral of ControlMux is
+type t_estados is (Inicio, Mult, Fin);
+signal estado_act, estado_sig : t_estados;
+
+begin --behavioral
+
+process (clk, reset_n, estado_sig)
+begin --process
+if reset_n='0' then
+estado_act<= Inicial;
+elsif clk'event and clk='1' then
+estado_act<= estado_sig;
+end if;
+end process;
+
+process (estado_act, fin)
+begin --process
+estado_sig<=estado_act;
+case estado_act is 
+when Inicial=>
+	if fin='1' then
+	estado_sig<= Mult;
+	end if;
+when Mult=>
+	

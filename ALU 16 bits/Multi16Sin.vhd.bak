@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Multi16Sin is
+port(
+		a,b		:	in 	std_logic_vector(15 downto 0);
+		p			:	out 	std_logic_vector(15 downto 0);
+		ov			:	out	std_logic);
+end Multiplicador;
+
+architecture behavioral of Multi16Sin is
+signal p_i	:	std_logic_vector(31 downto 0);
+signal signo : std_logic_vector(15 downto 0);
+begin --behavioral
+
+	signo <= (others => p_i(15));
+	p_i <=	std_logic_vector(unsigned(a)*unsigned(b));
+	p <= p_i(15 downto 0);
+	ov	<= '0' when p_i(31 downto 16) =	signo else
+					'1';
+end behavioral;

@@ -1,0 +1,71 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Control is
+	port(
+		clk		:	in 	std_logic;
+		boton		:	in		std_logic;
+		reset_n	:	in		std_logic;
+		fin		:	in		std_logic;
+		en_cnt	:	out	std_logic;
+		carga		:	out	std_logic;
+		en_reg	:	out	std_logic;
+		co_cnt	:	in		std_logic;
+		multip	:	out	std_logic_vector(1 downto 0));
+end Control;
+
+architecture behavioral of Control is
+type t_estados is (Inicio,Start,Registro,Paridad,Stop);
+signal estado_act,estado_sig	:	t_estados;
+
+begin
+	process(clk,reset_n,estado_sig)
+	begin
+		if reset_n = '0' then 
+			estado_act <= Inicio;
+		elsif clk' event and clk = '1' then
+			estado_act <= estado_sig;
+		end if;
+	end process;
+	
+	process(estado_act,fin,co_cnt,boton)
+	begin
+		estado_sig <= estado_act;
+		case estado_act is
+			when Inicio =>
+				multip <= "11";
+				if boton = '0' then
+					estado_sig <= Start;
+				end if;
+			when Start =>
+				multip <= "00";
+				if co_cnt = '1' then
+					estado_sig <= Registro;
+				end if;
+			when Registro =>
+				multip <= "01";
+				if fin = '1' then
+					estado_sig <= Paridad;
+				end if;
+			when Paridad =>
+				multip <= "10";
+				if co_cnt = '1' then
+					estado_sig <= Stop;
+				end if;
+			when Stop =>
+				multip <= "11";
+				if boton = '0' then
+					estado_sig <= Start;
+				end if;
+			when others =>
+				estado_sig <= Inicio;
+		end case;
+	end process;
+	
+	en_cnt <= '1' when estado_act = Start OR estado_act = Registro OR estado_act = Paridad else
+				'0';
+	carga <= '1' when estado_act = Registro else
+				'0';
+	en_reg <= co_cnt when estado_act = Registro else
+				'0';
+end behavioral;	

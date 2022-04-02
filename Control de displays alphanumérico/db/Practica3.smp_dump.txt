@@ -1,0 +1,12 @@
+
+State Machine - |Top|ControlMux:i14|estado_act
+Name estado_act.Final estado_act.Mult estado_act.Inicio 
+estado_act.Inicio 0 0 0 
+estado_act.Mult 0 1 1 
+estado_act.Final 1 0 1 
+
+State Machine - |Top|DetectorFlanco:i10|estado_act
+Name estado_act.Esp1 estado_act.Pulso estado_act.Esp0 
+estado_act.Esp0 0 0 0 
+estado_act.Pulso 0 1 1 
+estado_act.Esp1 1 0 1 

@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Risk is
+	port(
+	SelPc, SelALUB,SelBanco,SelDire		:	in	std_logic_vector(2 downto 0);
+	SelALUA			:	in std_logic;
+	en_PC,en_IR,en_banco,en_ALU :	in std_logic;
+	wr_mem_d,rd_mem_d
+	clk,reset_n	:	in	std_logic;
+	op_alu	:	in	std_logic_vector(3 downto 0);
+	
+	
+	);
+end Risk;
+
+architecture structural of Risk is
+
+begin
+
+
+end structural;

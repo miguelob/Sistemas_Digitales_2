@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ALU is	
+	generic(
+		g_data_w : integer :=16);
+	port(
+	a,b	:	in	std_logic_vector(g_data_w-1 downto 0);
+	op_alu	:	in std_logic_vector(3 downto 0);
+	ov,co,z	:	out std_logic;
+	res		:	out	std_logic_vector(g_data_w-1 downto 0));
+end ALU;
+
+architecture structural of ALU is
+entity SumadorRestador16Bits is
+generic(
+	g_data_w : integer :=16);
+	port(
+			a,b			: in	std_logic_vector(g_data_w-1 downto 0);
+			s_r 			: in 	std_logic;
+			s				: out	std_logic_vector(g_data_w-1 downto 0);
+			co			: out	std_logic;
+			ov			:	out std_logic);
+end SumadorRestador16Bits;
+begin
+
+	

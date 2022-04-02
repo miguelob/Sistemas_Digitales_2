@@ -1,0 +1,112 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 08:19:32  February 11, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Practica3_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY Top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:19:32  FEBRUARY 11, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE TemporizadorC.vhd
+set_global_assignment -name VHDL_FILE RegParPar.vhd
+set_global_assignment -name VHDL_FILE DetectorFlanco.vhd
+set_global_assignment -name VHDL_FILE AsciiA16Seg.vhd
+set_global_assignment -name VHDL_FILE ControlReg.vhd
+set_global_assignment -name VHDL_FILE MuxReg.vhd
+set_global_assignment -name VHDL_FILE ControlMux.vhd
+set_global_assignment -name VHDL_FILE Demux.vhd
+set_global_assignment -name VHDL_FILE Top.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_G20 -to datos[16]
+set_location_assignment PIN_E18 -to datos[15]
+set_location_assignment PIN_E19 -to datos[14]
+set_location_assignment PIN_F20 -to datos[13]
+set_location_assignment PIN_E20 -to datos[12]
+set_location_assignment PIN_D20 -to datos[11]
+set_location_assignment PIN_D19 -to datos[10]
+set_location_assignment PIN_C20 -to datos[9]
+set_location_assignment PIN_C19 -to datos[8]
+set_location_assignment PIN_C18 -to datos[7]
+set_location_assignment PIN_C17 -to datos[6]
+set_location_assignment PIN_D16 -to datos[5]
+set_location_assignment PIN_D15 -to datos[4]
+set_location_assignment PIN_D14 -to datos[3]
+set_location_assignment PIN_C14 -to datos[2]
+set_location_assignment PIN_F13 -to datos[1]
+set_location_assignment PIN_F12 -to datos[0]
+set_location_assignment PIN_G16 -to bits[7]
+set_location_assignment PIN_F15 -to bits[6]
+set_location_assignment PIN_E15 -to bits[5]
+set_location_assignment PIN_E14 -to bits[4]
+set_location_assignment PIN_G15 -to bits[3]
+set_location_assignment PIN_H14 -to bits[2]
+set_location_assignment PIN_H13 -to bits[1]
+set_location_assignment PIN_H12 -to bits[0]
+set_location_assignment PIN_T21 -to boton
+set_location_assignment PIN_L1 -to clk
+set_location_assignment PIN_M2 -to input[7]
+set_location_assignment PIN_U11 -to input[6]
+set_location_assignment PIN_U12 -to input[5]
+set_location_assignment PIN_W12 -to input[4]
+set_location_assignment PIN_V12 -to input[3]
+set_location_assignment PIN_M22 -to input[2]
+set_location_assignment PIN_L21 -to input[1]
+set_location_assignment PIN_L22 -to input[0]
+set_location_assignment PIN_R22 -to reset_n
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Top -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME ControlReg -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME i1 -section_id ControlReg
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ControlReg_vhd_tst -section_id ControlReg
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/ControlReg.vht -section_id ControlReg
+set_global_assignment -name EDA_TEST_BENCH_NAME Top -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME i1 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Top_vhd_tst -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Top.vht -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

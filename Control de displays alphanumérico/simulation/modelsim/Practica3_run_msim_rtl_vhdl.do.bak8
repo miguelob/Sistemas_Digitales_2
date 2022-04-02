@@ -1,0 +1,25 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/pract3.5/TemporizadorC.vhd}
+vcom -93 -work work {C:/pract3.5/RegParPar.vhd}
+vcom -93 -work work {C:/pract3.5/DetectorFlanco.vhd}
+vcom -93 -work work {C:/pract3.5/AsciiA16Seg.vhd}
+vcom -93 -work work {C:/pract3.5/ControlReg.vhd}
+vcom -93 -work work {C:/pract3.5/MuxReg.vhd}
+vcom -93 -work work {C:/pract3.5/ControlMux.vhd}
+vcom -93 -work work {C:/pract3.5/Demux.vhd}
+vcom -93 -work work {C:/pract3.5/Top.vhd}
+
+vcom -93 -work work {C:/pract3.5/simulation/modelsim/Top.vht}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  Top_vhd_tst
+
+add wave *
+view structure
+view signals
+run -all

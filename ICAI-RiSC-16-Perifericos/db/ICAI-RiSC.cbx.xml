@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ICAI-RiSC">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Risc|ALU:i_ALU|Multi16Con:i3|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Risc|RAM:i_RAM|altsyncram:ram_block_rtl_0" CBX_FILE_NAME="altsyncram_j7i1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Risc|ROM:i_ROM|altsyncram:memoria_rtl_0" CBX_FILE_NAME="altsyncram_4471.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

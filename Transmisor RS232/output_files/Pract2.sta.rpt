@@ -1,0 +1,1401 @@
+TimeQuest Timing Analyzer report for Pract2
+Tue Feb 05 12:43:57 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Recovery: 'clk'
+ 14. Slow Model Removal: 'clk'
+ 15. Slow Model Minimum Pulse Width: 'clk'
+ 16. Setup Times
+ 17. Hold Times
+ 18. Clock to Output Times
+ 19. Minimum Clock to Output Times
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'clk'
+ 26. Fast Model Hold: 'clk'
+ 27. Fast Model Recovery: 'clk'
+ 28. Fast Model Removal: 'clk'
+ 29. Fast Model Minimum Pulse Width: 'clk'
+ 30. Setup Times
+ 31. Hold Times
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Recovery Transfers
+ 42. Removal Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Pract2                                                            ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C20F484C7                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 255.62 MHz ; 255.62 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -2.912 ; -77.668       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.445 ; 0.000         ;
++-------+-------+---------------+
+
+
++--------------------------------+
+; Slow Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -1.806 ; -34.974       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 1.680 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.631 ; -40.735               ;
++-------+--------+-----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                       ;
++--------+-------------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.912 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.950      ;
+; -2.882 ; TemporizadorC:i2|contador[9]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.918      ;
+; -2.881 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.917      ;
+; -2.878 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[10]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.916      ;
+; -2.877 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[2]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.915      ;
+; -2.877 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.915      ;
+; -2.874 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.912      ;
+; -2.874 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[11]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.912      ;
+; -2.873 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.911      ;
+; -2.873 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.911      ;
+; -2.871 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[8]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.909      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.848 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.885      ;
+; -2.828 ; TemporizadorC:i2|contador[9]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.866      ;
+; -2.827 ; TemporizadorC:i2|contador[1]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.865      ;
+; -2.771 ; TemporizadorC:i2|contador[10] ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.807      ;
+; -2.770 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.806      ;
+; -2.751 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.789      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.737 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.774      ;
+; -2.717 ; TemporizadorC:i2|contador[10] ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.755      ;
+; -2.710 ; TemporizadorC:i2|contador[7]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.746      ;
+; -2.709 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.745      ;
+; -2.698 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[10]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.736      ;
+; -2.697 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[2]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.735      ;
+; -2.697 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.735      ;
+; -2.694 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.732      ;
+; -2.694 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[11]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.732      ;
+; -2.693 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.731      ;
+; -2.693 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.731      ;
+; -2.691 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[8]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.729      ;
+; -2.684 ; TemporizadorC:i2|contador[11] ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.720      ;
+; -2.683 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.719      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.676 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.713      ;
+; -2.661 ; TemporizadorC:i2|contador[6]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.697      ;
+; -2.660 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.696      ;
+; -2.656 ; TemporizadorC:i2|contador[7]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.694      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.650 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.687      ;
+; -2.649 ; TemporizadorC:i2|contador[3]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.687      ;
+; -2.638 ; TemporizadorC:i2|contador[4]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.676      ;
+; -2.630 ; TemporizadorC:i2|contador[11] ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.668      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.627 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.664      ;
+; -2.614 ; TemporizadorC:i2|contador[0]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.650      ;
+; -2.613 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.649      ;
+; -2.607 ; TemporizadorC:i2|contador[6]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.645      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.580 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.617      ;
+; -2.568 ; TemporizadorC:i2|contador[4]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.002     ; 3.604      ;
+; -2.567 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.002     ; 3.603      ;
+; -2.560 ; TemporizadorC:i2|contador[0]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.598      ;
+; -2.535 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[6]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.573      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.534 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; -0.001     ; 3.571      ;
+; -2.533 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[4]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.571      ;
+; -2.531 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[3]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.569      ;
+; -2.524 ; TemporizadorC:i2|contador[7]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.562      ;
+; -2.514 ; TemporizadorC:i2|contador[4]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 3.552      ;
+; -2.508 ; TemporizadorC:i2|contador[5]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.546      ;
+; -2.506 ; TemporizadorC:i2|contador[3]  ; TemporizadorC:i2|contador[10]  ; clk          ; clk         ; 1.000        ; 0.000      ; 3.544      ;
+; -2.505 ; TemporizadorC:i2|contador[3]  ; TemporizadorC:i2|contador[2]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.543      ;
+; -2.505 ; TemporizadorC:i2|contador[3]  ; TemporizadorC:i2|contador[1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.543      ;
+; -2.502 ; TemporizadorC:i2|contador[3]  ; TemporizadorC:i2|contador[7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 3.540      ;
++--------+-------------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                                ;
++-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.445 ; TemporizadorC:i2|contador[3]       ; TemporizadorC:i2|contador[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[2]       ; TemporizadorC:i2|contador[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[5]       ; TemporizadorC:i2|contador[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[4]       ; TemporizadorC:i2|contador[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[6]       ; TemporizadorC:i2|contador[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[7]       ; TemporizadorC:i2|contador[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; RegParSer:i4|contador[1]           ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; RegParSer:i4|contador[2]           ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; RegParSer:i4|contador[3]           ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Control:i5|estado_act.Start        ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Control:i5|estado_act.Registro     ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Control:i5|estado_act.Stop         ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[1]       ; TemporizadorC:i2|contador[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[8]       ; TemporizadorC:i2|contador[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[9]       ; TemporizadorC:i2|contador[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[10]      ; TemporizadorC:i2|contador[10]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[11]      ; TemporizadorC:i2|contador[11]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; TemporizadorC:i2|contador[0]       ; TemporizadorC:i2|contador[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; RegParSer:i4|registro[7]           ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Paridad:i1|bit_paridad             ; Paridad:i1|bit_paridad             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.652 ; DetectorFlanco:i6|estado_act.Pulso ; Paridad:i1|bit_paridad             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.938      ;
+; 0.976 ; Control:i5|estado_act.Paridad      ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.262      ;
+; 0.998 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.284      ;
+; 1.019 ; RegParSer:i4|contador[2]           ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.305      ;
+; 1.063 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[11]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.349      ;
+; 1.066 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.352      ;
+; 1.066 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.352      ;
+; 1.069 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.355      ;
+; 1.072 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.358      ;
+; 1.074 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.360      ;
+; 1.075 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.361      ;
+; 1.075 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.361      ;
+; 1.076 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[10]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.362      ;
+; 1.103 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.389      ;
+; 1.105 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.391      ;
+; 1.107 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.393      ;
+; 1.171 ; Control:i5|estado_act.Start        ; RegParSer:i4|registro[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 1.456      ;
+; 1.204 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.490      ;
+; 1.214 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 1.499      ;
+; 1.214 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.499      ;
+; 1.217 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; -0.001     ; 1.502      ;
+; 1.283 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.001      ; 1.570      ;
+; 1.316 ; Control:i5|estado_act.Registro     ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.001      ; 1.603      ;
+; 1.523 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.001      ; 1.810      ;
+; 1.535 ; RegParSer:i4|registro[2]           ; RegParSer:i4|registro[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.821      ;
+; 1.560 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; -0.001     ; 1.845      ;
+; 1.636 ; Control:i5|estado_act.Start        ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.002     ; 1.920      ;
+; 1.682 ; Control:i5|estado_act.Start        ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; -0.002     ; 1.966      ;
+; 1.689 ; RegParSer:i4|registro[1]           ; RegParSer:i4|registro[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.975      ;
+; 1.703 ; RegParSer:i4|registro[4]           ; RegParSer:i4|registro[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.989      ;
+; 1.723 ; RegParSer:i4|registro[7]           ; RegParSer:i4|registro[6]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.010      ;
+; 1.759 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Inicio       ; clk          ; clk         ; 0.000        ; 0.001      ; 2.046      ;
+; 1.879 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.165      ;
+; 1.881 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.166      ;
+; 1.881 ; TemporizadorC:i2|contador[1]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.166      ;
+; 1.884 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.169      ;
+; 1.912 ; DetectorFlanco:i6|estado_act.Esp0  ; DetectorFlanco:i6|estado_act.Pulso ; clk          ; clk         ; 0.000        ; 0.001      ; 2.199      ;
+; 1.991 ; Control:i5|estado_act.Paridad      ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.276      ;
+; 2.011 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.001      ; 2.298      ;
+; 2.032 ; TemporizadorC:i2|contador[3]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.317      ;
+; 2.032 ; TemporizadorC:i2|contador[3]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.317      ;
+; 2.035 ; TemporizadorC:i2|contador[3]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.320      ;
+; 2.047 ; RegParSer:i4|registro[6]           ; RegParSer:i4|registro[5]           ; clk          ; clk         ; 0.000        ; 0.000      ; 2.333      ;
+; 2.055 ; RegParSer:i4|registro[5]           ; RegParSer:i4|registro[4]           ; clk          ; clk         ; 0.000        ; 0.000      ; 2.341      ;
+; 2.115 ; Control:i5|estado_act.Registro     ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.002      ; 2.403      ;
+; 2.122 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.408      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[6]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[5]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[4]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[3]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[2]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.142 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[0]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.427      ;
+; 2.154 ; RegParSer:i4|contador[3]           ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.001     ; 2.439      ;
+; 2.161 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.447      ;
+; 2.168 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.455      ;
+; 2.169 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.456      ;
+; 2.172 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 2.458      ;
+; 2.173 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.000      ; 2.459      ;
+; 2.175 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; -0.002     ; 2.459      ;
+; 2.176 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.002     ; 2.460      ;
+; 2.179 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.464      ;
+; 2.180 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.465      ;
+; 2.200 ; TemporizadorC:i2|contador[5]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.485      ;
+; 2.200 ; TemporizadorC:i2|contador[5]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.485      ;
+; 2.203 ; TemporizadorC:i2|contador[5]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.488      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[6]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[5]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[4]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[3]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[2]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[1]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.210 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[0]           ; clk          ; clk         ; 0.000        ; 0.001      ; 2.497      ;
+; 2.212 ; RegParSer:i4|contador[3]           ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.498      ;
+; 2.213 ; Control:i5|estado_act.Stop         ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.499      ;
+; 2.224 ; TemporizadorC:i2|contador[2]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.509      ;
+; 2.224 ; TemporizadorC:i2|contador[2]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; -0.001     ; 2.509      ;
+; 2.227 ; TemporizadorC:i2|contador[1]       ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; -0.001     ; 2.512      ;
+; 2.227 ; TemporizadorC:i2|contador[2]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; -0.001     ; 2.512      ;
++-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'clk'                                                                                                                        ;
++--------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.806 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 1.000        ; -0.001     ; 2.843      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.470 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.509      ;
+; -1.440 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 1.000        ; -0.001     ; 2.477      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.294 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 2.332      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -1.104 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 1.000        ; 0.001      ; 2.143      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
+; -0.928 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.966      ;
++--------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'clk'                                                                                                                        ;
++-------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.680 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 1.856 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.143      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.046 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.332      ;
+; 2.192 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 0.000        ; -0.001     ; 2.477      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.222 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 0.000        ; 0.001      ; 2.509      ;
+; 2.558 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 0.000        ; -0.001     ; 2.843      ;
++-------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                             ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clk   ; Rise       ; clk                                ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Inicio       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Inicio       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Paridad      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Paridad      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Registro     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Registro     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Start        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Start        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Stop         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Stop         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Esp0  ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Esp0  ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Pulso ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Pulso ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; Paridad:i1|bit_paridad             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; Paridad:i1|bit_paridad             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[0]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[0]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[1]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[1]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[2]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[2]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[3]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[3]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[0]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[0]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[1]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[1]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[2]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[2]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[3]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[3]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[4]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[4]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[5]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[5]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[6]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[6]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[7]           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[7]           ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[0]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[0]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[10]      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[10]      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[11]      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[11]      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[1]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[1]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[2]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[2]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[3]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[3]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[4]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[4]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[5]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[5]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[6]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[6]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[7]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[7]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[8]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[8]       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[9]       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[9]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i1|bit_paridad|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i1|bit_paridad|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[10]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[10]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[11]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[11]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[1]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[1]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[2]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[2]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[3]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[3]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[4]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[4]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[5]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[5]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[6]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[6]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[7]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[7]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[8]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[8]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[9]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[9]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i4|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i4|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i4|contador[1]|clk                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; boton     ; clk        ; 4.989 ; 4.989 ; Rise       ; clk             ;
+; datos[*]  ; clk        ; 2.402 ; 2.402 ; Rise       ; clk             ;
+;  datos[0] ; clk        ; 2.078 ; 2.078 ; Rise       ; clk             ;
+;  datos[1] ; clk        ; 2.402 ; 2.402 ; Rise       ; clk             ;
+;  datos[2] ; clk        ; 1.690 ; 1.690 ; Rise       ; clk             ;
+;  datos[3] ; clk        ; 2.360 ; 2.360 ; Rise       ; clk             ;
+;  datos[4] ; clk        ; 1.598 ; 1.598 ; Rise       ; clk             ;
+;  datos[5] ; clk        ; 1.660 ; 1.660 ; Rise       ; clk             ;
+;  datos[6] ; clk        ; 1.568 ; 1.568 ; Rise       ; clk             ;
+;  datos[7] ; clk        ; 1.648 ; 1.648 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; boton     ; clk        ; -3.595 ; -3.595 ; Rise       ; clk             ;
+; datos[*]  ; clk        ; 0.221  ; 0.221  ; Rise       ; clk             ;
+;  datos[0] ; clk        ; -0.567 ; -0.567 ; Rise       ; clk             ;
+;  datos[1] ; clk        ; 0.221  ; 0.221  ; Rise       ; clk             ;
+;  datos[2] ; clk        ; -0.837 ; -0.837 ; Rise       ; clk             ;
+;  datos[3] ; clk        ; -1.061 ; -1.061 ; Rise       ; clk             ;
+;  datos[4] ; clk        ; -1.130 ; -1.130 ; Rise       ; clk             ;
+;  datos[5] ; clk        ; -1.181 ; -1.181 ; Rise       ; clk             ;
+;  datos[6] ; clk        ; -1.082 ; -1.082 ; Rise       ; clk             ;
+;  datos[7] ; clk        ; -0.129 ; -0.129 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; output    ; clk        ; 11.663 ; 11.663 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; output    ; clk        ; 10.173 ; 10.173 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -0.547 ; -11.862       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
++--------------------------------+
+; Fast Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -0.189 ; -1.137        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.765 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -33.380               ;
++-------+--------+-----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                       ;
++--------+-------------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                     ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.547 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.579      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.529 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.561      ;
+; -0.514 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.546      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.509 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.541      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.505 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.496 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.528      ;
+; -0.492 ; TemporizadorC:i2|contador[9]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.001     ; 1.523      ;
+; -0.490 ; TemporizadorC:i2|contador[9]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.001     ; 1.521      ;
+; -0.485 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[10]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.517      ;
+; -0.484 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[2]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.516      ;
+; -0.484 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.516      ;
+; -0.482 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.514      ;
+; -0.482 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[11]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.514      ;
+; -0.480 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.512      ;
+; -0.480 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.512      ;
+; -0.479 ; TemporizadorC:i2|contador[0]  ; TemporizadorC:i2|contador[8]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.511      ;
+; -0.474 ; TemporizadorC:i2|contador[1]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.506      ;
+; -0.474 ; TemporizadorC:i2|contador[10] ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.001     ; 1.505      ;
+; -0.472 ; TemporizadorC:i2|contador[10] ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.001     ; 1.503      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.466 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.454 ; TemporizadorC:i2|contador[11] ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.001     ; 1.485      ;
+; -0.452 ; TemporizadorC:i2|contador[9]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 1.484      ;
+; -0.452 ; TemporizadorC:i2|contador[11] ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.001     ; 1.483      ;
+; -0.450 ; TemporizadorC:i2|contador[7]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.001     ; 1.481      ;
+; -0.448 ; TemporizadorC:i2|contador[7]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.001     ; 1.479      ;
+; -0.441 ; TemporizadorC:i2|contador[6]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.001     ; 1.472      ;
+; -0.440 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.472      ;
+; -0.439 ; TemporizadorC:i2|contador[6]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.001     ; 1.470      ;
+; -0.434 ; TemporizadorC:i2|contador[10] ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 1.466      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.426 ; TemporizadorC:i2|contador[4]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.458      ;
+; -0.414 ; TemporizadorC:i2|contador[11] ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 1.446      ;
+; -0.411 ; TemporizadorC:i2|contador[0]  ; Control:i5|estado_act.Registro ; clk          ; clk         ; 1.000        ; -0.001     ; 1.442      ;
+; -0.410 ; TemporizadorC:i2|contador[7]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 1.442      ;
+; -0.409 ; TemporizadorC:i2|contador[0]  ; RegParSer:i4|registro[7]       ; clk          ; clk         ; 1.000        ; -0.001     ; 1.440      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.407 ; TemporizadorC:i2|contador[8]  ; RegParSer:i4|registro[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.406 ; TemporizadorC:i2|contador[3]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.438      ;
+; -0.401 ; TemporizadorC:i2|contador[6]  ; Control:i5|estado_act.Start    ; clk          ; clk         ; 1.000        ; 0.000      ; 1.433      ;
+; -0.394 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[10]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.426      ;
+; -0.393 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[2]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.425      ;
+; -0.393 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[1]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.425      ;
+; -0.391 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[7]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.423      ;
+; -0.391 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[11]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.423      ;
+; -0.389 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[5]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.421      ;
+; -0.389 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[0]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.421      ;
+; -0.388 ; TemporizadorC:i2|contador[4]  ; TemporizadorC:i2|contador[9]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.420      ;
+; -0.388 ; TemporizadorC:i2|contador[2]  ; TemporizadorC:i2|contador[8]   ; clk          ; clk         ; 1.000        ; 0.000      ; 1.420      ;
+; -0.375 ; TemporizadorC:i2|contador[2]  ; RegParSer:i4|registro[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.407      ;
+; -0.375 ; TemporizadorC:i2|contador[2]  ; RegParSer:i4|registro[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.407      ;
+; -0.375 ; TemporizadorC:i2|contador[2]  ; RegParSer:i4|registro[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.407      ;
+; -0.375 ; TemporizadorC:i2|contador[2]  ; RegParSer:i4|registro[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.407      ;
+; -0.375 ; TemporizadorC:i2|contador[2]  ; RegParSer:i4|registro[2]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.407      ;
+; -0.375 ; TemporizadorC:i2|contador[2]  ; RegParSer:i4|registro[1]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.407      ;
++--------+-------------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                ;
++-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; TemporizadorC:i2|contador[3]       ; TemporizadorC:i2|contador[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[2]       ; TemporizadorC:i2|contador[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[5]       ; TemporizadorC:i2|contador[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[4]       ; TemporizadorC:i2|contador[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[6]       ; TemporizadorC:i2|contador[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[7]       ; TemporizadorC:i2|contador[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; RegParSer:i4|contador[1]           ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; RegParSer:i4|contador[2]           ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; RegParSer:i4|contador[3]           ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Control:i5|estado_act.Start        ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Control:i5|estado_act.Registro     ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Control:i5|estado_act.Stop         ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[1]       ; TemporizadorC:i2|contador[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[8]       ; TemporizadorC:i2|contador[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[9]       ; TemporizadorC:i2|contador[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[10]      ; TemporizadorC:i2|contador[10]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[11]      ; TemporizadorC:i2|contador[11]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; TemporizadorC:i2|contador[0]       ; TemporizadorC:i2|contador[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; RegParSer:i4|registro[7]           ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Paridad:i1|bit_paridad             ; Paridad:i1|bit_paridad             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.257 ; DetectorFlanco:i6|estado_act.Pulso ; Paridad:i1|bit_paridad             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.409      ;
+; 0.363 ; Control:i5|estado_act.Paridad      ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.372 ; RegParSer:i4|contador[2]           ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; Control:i5|estado_act.Registro     ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.413 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[11]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.565      ;
+; 0.416 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.568      ;
+; 0.416 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.568      ;
+; 0.419 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.571      ;
+; 0.422 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.574      ;
+; 0.422 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.574      ;
+; 0.423 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.575      ;
+; 0.423 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.575      ;
+; 0.424 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.576      ;
+; 0.424 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.576      ;
+; 0.425 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.577      ;
+; 0.425 ; Control:i5|estado_act.Inicio       ; TemporizadorC:i2|contador[10]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.577      ;
+; 0.452 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.604      ;
+; 0.471 ; Control:i5|estado_act.Start        ; RegParSer:i4|registro[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.623      ;
+; 0.471 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.624      ;
+; 0.493 ; Control:i5|estado_act.Registro     ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.001      ; 0.646      ;
+; 0.495 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.647      ;
+; 0.498 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.499 ; Control:i5|estado_act.Inicio       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.651      ;
+; 0.563 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.716      ;
+; 0.578 ; RegParSer:i4|registro[2]           ; RegParSer:i4|registro[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.730      ;
+; 0.615 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.767      ;
+; 0.647 ; RegParSer:i4|registro[1]           ; RegParSer:i4|registro[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.799      ;
+; 0.653 ; Control:i5|estado_act.Start        ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.001     ; 0.804      ;
+; 0.657 ; RegParSer:i4|registro[4]           ; RegParSer:i4|registro[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.809      ;
+; 0.664 ; RegParSer:i4|registro[7]           ; RegParSer:i4|registro[6]           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.817      ;
+; 0.679 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Inicio       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.831      ;
+; 0.694 ; TemporizadorC:i2|contador[1]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.846      ;
+; 0.697 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.849      ;
+; 0.698 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.850      ;
+; 0.707 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.859      ;
+; 0.728 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.880      ;
+; 0.741 ; DetectorFlanco:i6|estado_act.Esp0  ; DetectorFlanco:i6|estado_act.Pulso ; clk          ; clk         ; 0.000        ; 0.001      ; 0.894      ;
+; 0.747 ; Control:i5|estado_act.Paridad      ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.001     ; 0.898      ;
+; 0.755 ; Control:i5|estado_act.Start        ; RegParSer:i4|registro[7]           ; clk          ; clk         ; 0.000        ; -0.001     ; 0.906      ;
+; 0.770 ; TemporizadorC:i2|contador[3]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.922      ;
+; 0.772 ; Control:i5|estado_act.Registro     ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.001      ; 0.925      ;
+; 0.773 ; TemporizadorC:i2|contador[3]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.925      ;
+; 0.774 ; TemporizadorC:i2|contador[3]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.926      ;
+; 0.776 ; RegParSer:i4|registro[6]           ; RegParSer:i4|registro[5]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.928      ;
+; 0.777 ; RegParSer:i4|registro[5]           ; RegParSer:i4|registro[4]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.929      ;
+; 0.781 ; RegParSer:i4|contador[3]           ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.001     ; 0.932      ;
+; 0.794 ; RegParSer:i4|contador[3]           ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.946      ;
+; 0.806 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.959      ;
+; 0.806 ; Control:i5|estado_act.Registro     ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.959      ;
+; 0.813 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.965      ;
+; 0.813 ; TemporizadorC:i2|contador[1]       ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.965      ;
+; 0.814 ; TemporizadorC:i2|contador[5]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.966      ;
+; 0.814 ; TemporizadorC:i2|contador[1]       ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.966      ;
+; 0.816 ; DetectorFlanco:i6|estado_act.Pulso ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.968      ;
+; 0.817 ; TemporizadorC:i2|contador[5]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.969      ;
+; 0.817 ; TemporizadorC:i2|contador[2]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.969      ;
+; 0.818 ; TemporizadorC:i2|contador[5]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.970      ;
+; 0.820 ; TemporizadorC:i2|contador[2]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.972      ;
+; 0.821 ; TemporizadorC:i2|contador[2]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.973      ;
+; 0.825 ; Control:i5|estado_act.Stop         ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.977      ;
+; 0.826 ; TemporizadorC:i2|contador[1]       ; TemporizadorC:i2|contador[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.978      ;
+; 0.831 ; TemporizadorC:i2|contador[0]       ; TemporizadorC:i2|contador[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.983      ;
+; 0.835 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.987      ;
+; 0.835 ; RegParSer:i4|contador[0]           ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.987      ;
+; 0.837 ; TemporizadorC:i2|contador[10]      ; TemporizadorC:i2|contador[11]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.989      ;
+; 0.838 ; Control:i5|estado_act.Inicio       ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; TemporizadorC:i2|contador[5]       ; RegParSer:i4|contador[2]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; TemporizadorC:i2|contador[5]       ; RegParSer:i4|contador[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.840 ; RegParSer:i4|contador[0]           ; Control:i5|estado_act.Registro     ; clk          ; clk         ; 0.000        ; -0.001     ; 0.991      ;
+; 0.846 ; Control:i5|estado_act.Stop         ; Control:i5|estado_act.Start        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.998      ;
+; 0.849 ; TemporizadorC:i2|contador[8]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.001      ;
+; 0.849 ; TemporizadorC:i2|contador[9]       ; TemporizadorC:i2|contador[10]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.001      ;
+; 0.852 ; TemporizadorC:i2|contador[8]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.004      ;
+; 0.853 ; TemporizadorC:i2|contador[8]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.005      ;
+; 0.853 ; RegParSer:i4|contador[0]           ; Control:i5|estado_act.Paridad      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.005      ;
+; 0.866 ; TemporizadorC:i2|contador[0]       ; TemporizadorC:i2|contador[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.018      ;
+; 0.868 ; TemporizadorC:i2|contador[4]       ; Control:i5|estado_act.Stop         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.020      ;
+; 0.871 ; TemporizadorC:i2|contador[4]       ; RegParSer:i4|contador[1]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.023      ;
+; 0.872 ; TemporizadorC:i2|contador[4]       ; RegParSer:i4|contador[0]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.024      ;
++-------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'clk'                                                                                                                        ;
++--------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.189 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 1.000        ; -0.001     ; 1.220      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.076 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 1.108      ;
+; -0.071 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 1.000        ; -0.001     ; 1.102      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; -0.003 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 1.035      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.042  ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 0.990      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
+; 0.115  ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.917      ;
++--------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'clk'                                                                                                                        ;
++-------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.765 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.917      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.838 ; DetectorFlanco:i6|estado_act.Pulso ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.990      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|contador[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; Paridad:i1|bit_paridad        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[6]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[5]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[4]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[3]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[2]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[1]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.883 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[0]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.035      ;
+; 0.951 ; DetectorFlanco:i6|estado_act.Pulso ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 0.000        ; -0.001     ; 1.102      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 0.956 ; Control:i5|estado_act.Stop         ; TemporizadorC:i2|contador[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
+; 1.069 ; Control:i5|estado_act.Stop         ; RegParSer:i4|registro[7]      ; clk          ; clk         ; 0.000        ; -0.001     ; 1.220      ;
++-------+------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                             ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Inicio       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Inicio       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Paridad      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Paridad      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Registro     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Registro     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Start        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Start        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Control:i5|estado_act.Stop         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Control:i5|estado_act.Stop         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Esp0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Esp0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Pulso ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; DetectorFlanco:i6|estado_act.Pulso ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Paridad:i1|bit_paridad             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Paridad:i1|bit_paridad             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[0]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[0]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[1]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[1]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[2]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[2]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|contador[3]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|contador[3]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[0]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[0]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[1]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[1]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[2]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[2]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[3]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[3]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[4]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[4]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[5]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[5]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[6]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[6]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RegParSer:i4|registro[7]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RegParSer:i4|registro[7]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[0]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[0]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[10]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[10]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[11]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[11]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[1]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[1]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[2]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[2]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[3]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[3]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[4]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[4]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[5]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[5]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[6]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[6]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[7]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[7]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[8]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[8]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; TemporizadorC:i2|contador[9]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; TemporizadorC:i2|contador[9]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i1|bit_paridad|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i1|bit_paridad|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[10]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[10]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[11]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[11]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[1]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[1]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[2]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[2]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[3]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[3]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[4]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[4]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[5]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[5]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[6]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[6]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[7]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[7]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[8]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[8]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i2|contador[9]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i2|contador[9]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i4|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; i4|contador[0]|clk                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; i4|contador[1]|clk                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; boton     ; clk        ; 2.205 ; 2.205 ; Rise       ; clk             ;
+; datos[*]  ; clk        ; 0.377 ; 0.377 ; Rise       ; clk             ;
+;  datos[0] ; clk        ; 0.224 ; 0.224 ; Rise       ; clk             ;
+;  datos[1] ; clk        ; 0.337 ; 0.337 ; Rise       ; clk             ;
+;  datos[2] ; clk        ; 0.084 ; 0.084 ; Rise       ; clk             ;
+;  datos[3] ; clk        ; 0.377 ; 0.377 ; Rise       ; clk             ;
+;  datos[4] ; clk        ; 0.096 ; 0.096 ; Rise       ; clk             ;
+;  datos[5] ; clk        ; 0.100 ; 0.100 ; Rise       ; clk             ;
+;  datos[6] ; clk        ; 0.082 ; 0.082 ; Rise       ; clk             ;
+;  datos[7] ; clk        ; 0.123 ; 0.123 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; boton     ; clk        ; -1.656 ; -1.656 ; Rise       ; clk             ;
+; datos[*]  ; clk        ; 0.659  ; 0.659  ; Rise       ; clk             ;
+;  datos[0] ; clk        ; 0.354  ; 0.354  ; Rise       ; clk             ;
+;  datos[1] ; clk        ; 0.659  ; 0.659  ; Rise       ; clk             ;
+;  datos[2] ; clk        ; 0.246  ; 0.246  ; Rise       ; clk             ;
+;  datos[3] ; clk        ; 0.121  ; 0.121  ; Rise       ; clk             ;
+;  datos[4] ; clk        ; 0.071  ; 0.071  ; Rise       ; clk             ;
+;  datos[5] ; clk        ; 0.073  ; 0.073  ; Rise       ; clk             ;
+;  datos[6] ; clk        ; 0.153  ; 0.153  ; Rise       ; clk             ;
+;  datos[7] ; clk        ; 0.409  ; 0.409  ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; output    ; clk        ; 5.591 ; 5.591 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; output    ; clk        ; 5.073 ; 5.073 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -2.912  ; 0.215 ; -1.806   ; 0.765   ; -1.631              ;
+;  clk             ; -2.912  ; 0.215 ; -1.806   ; 0.765   ; -1.631              ;
+; Design-wide TNS  ; -77.668 ; 0.0   ; -34.974  ; 0.0     ; -40.735             ;
+;  clk             ; -77.668 ; 0.000 ; -34.974  ; 0.000   ; -40.735             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; boton     ; clk        ; 4.989 ; 4.989 ; Rise       ; clk             ;
+; datos[*]  ; clk        ; 2.402 ; 2.402 ; Rise       ; clk             ;
+;  datos[0] ; clk        ; 2.078 ; 2.078 ; Rise       ; clk             ;
+;  datos[1] ; clk        ; 2.402 ; 2.402 ; Rise       ; clk             ;
+;  datos[2] ; clk        ; 1.690 ; 1.690 ; Rise       ; clk             ;
+;  datos[3] ; clk        ; 2.360 ; 2.360 ; Rise       ; clk             ;
+;  datos[4] ; clk        ; 1.598 ; 1.598 ; Rise       ; clk             ;
+;  datos[5] ; clk        ; 1.660 ; 1.660 ; Rise       ; clk             ;
+;  datos[6] ; clk        ; 1.568 ; 1.568 ; Rise       ; clk             ;
+;  datos[7] ; clk        ; 1.648 ; 1.648 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; boton     ; clk        ; -1.656 ; -1.656 ; Rise       ; clk             ;
+; datos[*]  ; clk        ; 0.659  ; 0.659  ; Rise       ; clk             ;
+;  datos[0] ; clk        ; 0.354  ; 0.354  ; Rise       ; clk             ;
+;  datos[1] ; clk        ; 0.659  ; 0.659  ; Rise       ; clk             ;
+;  datos[2] ; clk        ; 0.246  ; 0.246  ; Rise       ; clk             ;
+;  datos[3] ; clk        ; 0.121  ; 0.121  ; Rise       ; clk             ;
+;  datos[4] ; clk        ; 0.071  ; 0.071  ; Rise       ; clk             ;
+;  datos[5] ; clk        ; 0.073  ; 0.073  ; Rise       ; clk             ;
+;  datos[6] ; clk        ; 0.153  ; 0.153  ; Rise       ; clk             ;
+;  datos[7] ; clk        ; 0.409  ; 0.409  ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; output    ; clk        ; 11.663 ; 11.663 ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; output    ; clk        ; 5.073 ; 5.073 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 560      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 560      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 50       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 50       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 50    ; 50   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 5     ; 5    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Feb 05 12:43:56 2019
+Info: Command: quartus_sta Pract2 -c Pract2
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Pract2.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.912
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.912       -77.668 clk 
+Info (332146): Worst-case hold slack is 0.445
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.445         0.000 clk 
+Info (332146): Worst-case recovery slack is -1.806
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.806       -34.974 clk 
+Info (332146): Worst-case removal slack is 1.680
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.680         0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is -1.631
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.631       -40.735 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.547
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.547       -11.862 clk 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 clk 
+Info (332146): Worst-case recovery slack is -0.189
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.189        -1.137 clk 
+Info (332146): Worst-case removal slack is 0.765
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.765         0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -33.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 429 megabytes
+    Info: Processing ended: Tue Feb 05 12:43:57 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

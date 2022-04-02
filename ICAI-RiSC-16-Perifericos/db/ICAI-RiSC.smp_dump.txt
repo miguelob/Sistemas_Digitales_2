@@ -1,0 +1,17 @@
+
+State Machine - |Risc|estado_act
+Name estado_act.LW5 estado_act.SW4 estado_act.LW4 estado_act.ADDI4 estado_act.ARIT4 estado_act.JALR3 estado_act.LWSW3 estado_act.ADDI3 estado_act.BEQ3 estado_act.ARIT3 estado_act.LUI3 estado_act.DECOD estado_act.FETCH estado_act.RESET 
+estado_act.RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado_act.FETCH 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado_act.DECOD 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado_act.LUI3 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado_act.ARIT3 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado_act.BEQ3 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado_act.ADDI3 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado_act.LWSW3 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado_act.JALR3 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado_act.ARIT4 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado_act.ADDI4 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado_act.LW4 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado_act.SW4 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado_act.LW5 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

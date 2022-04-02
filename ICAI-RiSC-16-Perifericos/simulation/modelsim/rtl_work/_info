@@ -1,0 +1,546 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\oleob\OneDrive - Universidad Pontificia Comillas\ICAI_2GITT\Sistemas_Digitales_2\ICAI-RiSC-16-Perifericos\simulation\modelsim
+Ealu
+Z1 w1553503412
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\oleob\OneDrive - Universidad Pontificia Comillas\ICAI_2GITT\Sistemas_Digitales_2\ICAI-RiSC-16-Perifericos\simulation\modelsim
+Z6 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ALU.vhd
+Z7 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ALU.vhd
+l0
+L5
+V6nafGLeP1oJlno=G9^44F3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1556518097.934000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ALU.vhd|
+Z11 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ALU.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 Mb:YL_2d3hQW_9ZTZXkJ`3
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 6nafGLeP1oJlno=G9^44F3
+l78
+L15
+VJAT]a;j6>I<RGX>`jl:aX2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 R4fX6YZO[4;I9OfcVP^CH3
+!i10b 1
+Ebancoreg
+Z14 w1553114727
+R3
+R4
+R5
+Z15 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/BancoReg.vhd
+Z16 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/BancoReg.vhd
+l0
+L4
+VJjZG@GD3fl4a`ldHF8zAk2
+R8
+31
+Z17 !s108 1556518098.383000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/BancoReg.vhd|
+Z19 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/BancoReg.vhd|
+R12
+R13
+!s100 3K]J`G5ii4BB[ZOl1Y7jS3
+!i10b 1
+Astructural
+R3
+R4
+DEx4 work 8 bancoreg 0 22 JjZG@GD3fl4a`ldHF8zAk2
+l33
+L17
+VYOGEmN7iMKAXUhgSTTd::1
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 MU@IIR`R[e5K5>^H@@9bX0
+!i10b 1
+Emulti16con
+Z20 w1553273324
+R2
+R3
+R4
+R5
+Z21 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Con.vhd
+Z22 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Con.vhd
+l0
+L5
+V08V?QE^`ILPViD22iPa4A0
+R8
+31
+Z23 !s108 1556518097.795000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Con.vhd|
+Z25 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Con.vhd|
+R12
+R13
+!s100 3lPmBXIh?5Og[d`5gHleG0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 multi16con 0 22 08V?QE^`ILPViD22iPa4A0
+l18
+L15
+VJKROUSEc4e8[4@lSnfI:g0
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 TO@FgRMi=;b`Gg26dN3]<1
+!i10b 1
+Emulti16sin
+Z26 w1553273318
+R2
+R3
+R4
+R5
+Z27 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Sin.vhd
+Z28 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Sin.vhd
+l0
+L5
+VcZJUX<G9Q9i41QiS:7FX:3
+R8
+31
+Z29 !s108 1556518097.646000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Sin.vhd|
+Z31 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Multi16Sin.vhd|
+R12
+R13
+!s100 @>gzR?:YBR27ohDmBWTa`3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 multi16sin 0 22 cZJUX<G9Q9i41QiS:7FX:3
+l18
+L15
+VLQ`2WlIeogUjN0c1bB]iX1
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 Uo6_DFT2GLMj[XK65TURV1
+!i10b 1
+Emux2a16
+Z32 w1554709591
+R3
+R4
+R5
+Z33 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux2a16.vhd
+Z34 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux2a16.vhd
+l0
+L4
+V`T9eV;jFVDU@_d]P9T>_M2
+R8
+31
+Z35 !s108 1556518100.071000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux2a16.vhd|
+Z37 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux2a16.vhd|
+R12
+R13
+!s100 L^_?Ybh5TU[MG299S]Ci53
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 7 mux2a16 0 22 `T9eV;jFVDU@_d]P9T>_M2
+l13
+L11
+VnXAh9Zn:7n9[ZfUF5?ddo2
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 >[F5kNl:cIfnSo<YnM`RP0
+!i10b 1
+Emux4a16
+Z38 w1553503347
+R3
+R4
+R5
+Z39 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a16.vhd
+Z40 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a16.vhd
+l0
+L4
+VU42hLWQkl9hKE0Jm[c7Vl1
+R8
+31
+Z41 !s108 1556518098.555000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a16.vhd|
+Z43 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a16.vhd|
+R12
+R13
+!s100 Bgh4XCOi@I>4TALzUXl7J3
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 7 mux4a16 0 22 U42hLWQkl9hKE0Jm[c7Vl1
+l13
+L11
+VW8b^9eBlbB9Z0hCo=oN>H2
+R8
+31
+R41
+R42
+R43
+R12
+R13
+!s100 Uj6:9Y<RO;FUWnZg7nR@V0
+!i10b 1
+Emux4a3
+Z44 w1552898561
+R3
+R4
+R5
+Z45 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a3.vhd
+Z46 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a3.vhd
+l0
+L4
+ViU<@:kzcBe8aB3[JH;Cj;2
+R8
+31
+Z47 !s108 1556518098.690000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a3.vhd|
+Z49 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Mux4a3.vhd|
+R12
+R13
+!s100 Tc7F9nAIDomXOzPm`ne8?0
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 6 mux4a3 0 22 iU<@:kzcBe8aB3[JH;Cj;2
+l13
+L11
+VSBOZAm_mFXSo]GYR`9fG`1
+R8
+31
+R47
+R48
+R49
+R12
+R13
+!s100 8C^2Zz3kYH4YKb?5GD<o<3
+!i10b 1
+Enand_op
+Z50 w1553273313
+R2
+R3
+R4
+R5
+Z51 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/nand_op.vhd
+Z52 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/nand_op.vhd
+l0
+L5
+VmG=5[MSDBm1oLfFAQ2>k03
+R8
+31
+Z53 !s108 1556518097.475000
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/nand_op.vhd|
+Z55 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/nand_op.vhd|
+R12
+R13
+!s100 U0SgdPj]_;R>DkZ[I?fO82
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 nand_op 0 22 mG=5[MSDBm1oLfFAQ2>k03
+l16
+L15
+VNK?D6Zea^UOBSHO9H_a1]2
+R8
+31
+R53
+R54
+R55
+R12
+R13
+!s100 T74;mHcFil=k?4cc9AF`n0
+!i10b 1
+Eram
+Z56 w1554027001
+R2
+R3
+R4
+R5
+Z57 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RAM.vhd
+Z58 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RAM.vhd
+l0
+L5
+V_DE93=GmmbnBK7E@S[E>i2
+R8
+31
+Z59 !s108 1556518099.042000
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RAM.vhd|
+Z61 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RAM.vhd|
+R12
+R13
+!s100 425jcQXMFIKS^64U_mSMm0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 3 ram 0 22 _DE93=GmmbnBK7E@S[E>i2
+l19
+L15
+V05MW]7NJ^8ebl`XDAYFbV3
+R8
+31
+R59
+R60
+R61
+R12
+R13
+!s100 3mR30AmgS<hZcIILAYnVR2
+!i10b 1
+Eregparpar16
+Z62 w1552898600
+R3
+R4
+R5
+Z63 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RegParPar16.vhd
+Z64 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RegParPar16.vhd
+l0
+L4
+VEhN]U1da_TPfg8c]W=H4Q1
+R8
+31
+Z65 !s108 1556518098.146000
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RegParPar16.vhd|
+Z67 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/RegParPar16.vhd|
+R12
+R13
+!s100 V5HWGCGcE=`U@XoCD`F;H0
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 11 regparpar16 0 22 EhN]U1da_TPfg8c]W=H4Q1
+l15
+L13
+VY6HJ[Ql8E;gmXMA4EDN0f3
+R8
+31
+R65
+R66
+R67
+R12
+R13
+!s100 ;9ZfDL[LY72@:7aD8k0I;0
+!i10b 1
+Erisc
+Z68 w1555349401
+R2
+R3
+R4
+R5
+Z69 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Risc.vhd
+Z70 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Risc.vhd
+l0
+L5
+V<>PaI6ZjC>dKaK8`aJ?JU0
+R8
+31
+Z71 !s108 1556518096.850000
+Z72 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Risc.vhd|
+Z73 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Risc.vhd|
+R12
+R13
+!s100 21PNalPY_<=z:PgOVJEAQ1
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 4 risc 0 22 <>PaI6ZjC>dKaK8`aJ?JU0
+l115
+L13
+VSf>05f?TTnVPkX:08klRF0
+R8
+31
+R71
+R72
+R73
+R12
+R13
+!s100 Pm:?MWOoaB^c<PiAQ;=^@0
+!i10b 1
+Erisc_vhd_tst
+Z74 w1555360106
+R3
+R4
+R5
+Z75 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/simulation/modelsim/Risc.vht
+Z76 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/simulation/modelsim/Risc.vht
+l0
+L30
+V5H7<1:8l98z3_0;ViCIk93
+!s100 fE5HnoVY@KRC@bkZTM=Za0
+R8
+31
+!i10b 1
+Z77 !s108 1556518100.223000
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/simulation/modelsim/Risc.vht|
+Z79 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/simulation/modelsim/Risc.vht|
+R12
+R13
+Arisc_arch
+R3
+R4
+DEx4 work 12 risc_vhd_tst 0 22 5H7<1:8l98z3_0;ViCIk93
+l47
+L32
+VAVM=7HGjnofe[ONczdI:T0
+!s100 cJALQ`0febIIB?_X6=4[>1
+R8
+31
+!i10b 1
+R77
+R78
+R79
+R12
+R13
+Erom
+Z80 w1555359753
+R2
+R3
+R4
+R5
+Z81 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ROM.vhd
+Z82 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ROM.vhd
+l0
+L8
+V@TUm:SH;KH;W1iFjaOZ7o2
+R8
+31
+Z83 !s108 1556518097.009000
+Z84 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ROM.vhd|
+Z85 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/ROM.vhd|
+R12
+R13
+!s100 idIIEenN4HC>e90_PQ>Ni2
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+DEx4 work 3 rom 0 22 @TUm:SH;KH;W1iFjaOZ7o2
+l51
+L16
+V01Xz?R?0SEPAAG?EM=h^c0
+R8
+31
+R83
+R84
+R85
+R12
+R13
+!s100 VSiP@EG4JLd>c7`J;mT^Z1
+!i10b 1
+Esumador1bit
+Z86 w1551687879
+R3
+R4
+R5
+Z87 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Sumador1Bit.vhd
+Z88 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Sumador1Bit.vhd
+l0
+L6
+Vc^LlSd35fXjlB`3eokb^e1
+R8
+31
+Z89 !s108 1556518097.334000
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Sumador1Bit.vhd|
+Z91 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/Sumador1Bit.vhd|
+R12
+R13
+!s100 0VS2I:fmMc2:ed:3nYfMJ1
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 11 sumador1bit 0 22 c^LlSd35fXjlB`3eokb^e1
+l17
+L15
+V@Y_V0ME[9z`GDIU4?UaVj3
+R8
+31
+R89
+R90
+R91
+R12
+R13
+!s100 <>4;Sfo38M6DVBWP38?j21
+!i10b 1
+Esumadorrestador16bits
+Z92 w1553273299
+R2
+R3
+R4
+R5
+Z93 8C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/SumadorRestador16Bits.vhd
+Z94 FC:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/SumadorRestador16Bits.vhd
+l0
+L7
+V12TAF<;2IlR4KZX:cCXzA0
+R8
+31
+Z95 !s108 1556518097.152000
+Z96 !s90 -reportprogress|300|-93|-work|work|C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/SumadorRestador16Bits.vhd|
+Z97 !s107 C:/Users/oleob/OneDrive - Universidad Pontificia Comillas/ICAI_2GITT/Sistemas_Digitales_2/ICAI-RiSC-16-Perifericos/SumadorRestador16Bits.vhd|
+R12
+R13
+!s100 GchDg1Xg[GMJeVFA0>Y_W2
+!i10b 1
+Astructural
+R2
+R3
+R4
+DEx4 work 21 sumadorrestador16bits 0 22 12TAF<;2IlR4KZX:cCXzA0
+l31
+L18
+Vl:^>Tn6`m=mR::@c^o@Kj0
+R8
+31
+R95
+R96
+R97
+R12
+R13
+!s100 dQ9;HQdNQ>nTX`Kh1Qoc;3
+!i10b 1

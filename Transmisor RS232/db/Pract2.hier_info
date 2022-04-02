@@ -1,0 +1,201 @@
+|RS232
+clk => Paridad:i1.clk
+clk => TemporizadorC:i2.clk
+clk => RegParSer:i4.clk
+clk => Control:i5.clk
+clk => DetectorFlanco:i6.clk
+reset_n => Control:i5.reset_n
+reset_n => DetectorFlanco:i6.reset_n
+datos[0] => Paridad:i1.reg[0]
+datos[0] => RegParSer:i4.e_p[0]
+datos[1] => Paridad:i1.reg[1]
+datos[1] => RegParSer:i4.e_p[1]
+datos[2] => Paridad:i1.reg[2]
+datos[2] => RegParSer:i4.e_p[2]
+datos[3] => Paridad:i1.reg[3]
+datos[3] => RegParSer:i4.e_p[3]
+datos[4] => Paridad:i1.reg[4]
+datos[4] => RegParSer:i4.e_p[4]
+datos[5] => Paridad:i1.reg[5]
+datos[5] => RegParSer:i4.e_p[5]
+datos[6] => Paridad:i1.reg[6]
+datos[6] => RegParSer:i4.e_p[6]
+datos[7] => Paridad:i1.reg[7]
+datos[7] => RegParSer:i4.e_p[7]
+boton => DetectorFlanco:i6.e
+output <= Mux:i3.salida
+
+
+|RS232|Paridad:i1
+reg[0] => bit_paridad.IN1
+reg[1] => bit_paridad.IN1
+reg[2] => bit_paridad.IN1
+reg[3] => bit_paridad.IN1
+reg[4] => bit_paridad.IN1
+reg[5] => bit_paridad.IN1
+reg[6] => bit_paridad.IN0
+reg[7] => bit_paridad.IN1
+boton => bit_paridad~reg0.ENA
+reset_n => bit_paridad~reg0.ACLR
+clk => bit_paridad~reg0.CLK
+bit_paridad <= bit_paridad~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RS232|TemporizadorC:i2
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+reset_n => contador[0].ACLR
+reset_n => contador[1].ACLR
+reset_n => contador[2].ACLR
+reset_n => contador[3].ACLR
+reset_n => contador[4].ACLR
+reset_n => contador[5].ACLR
+reset_n => contador[6].ACLR
+reset_n => contador[7].ACLR
+reset_n => contador[8].ACLR
+reset_n => contador[9].ACLR
+reset_n => contador[10].ACLR
+reset_n => contador[11].ACLR
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => contador.OUTPUTSELECT
+en_cnt => co.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RS232|Mux:i3
+paridad => Mux0.IN0
+registro => Mux0.IN1
+start => Mux0.IN2
+stop => Mux0.IN3
+control[0] => Mux0.IN5
+control[1] => Mux0.IN4
+salida <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RS232|RegParSer:i4
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => registro[0].CLK
+clk => registro[1].CLK
+clk => registro[2].CLK
+clk => registro[3].CLK
+clk => registro[4].CLK
+clk => registro[5].CLK
+clk => registro[6].CLK
+clk => registro[7].CLK
+reset_n => contador[0].ACLR
+reset_n => contador[1].ACLR
+reset_n => contador[2].ACLR
+reset_n => contador[3].ACLR
+reset_n => registro[0].ACLR
+reset_n => registro[1].ACLR
+reset_n => registro[2].ACLR
+reset_n => registro[3].ACLR
+reset_n => registro[4].ACLR
+reset_n => registro[5].ACLR
+reset_n => registro[6].ACLR
+reset_n => registro[7].ACLR
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => registro.OUTPUTSELECT
+load => contador[0].ENA
+load => contador[3].ENA
+load => contador[2].ENA
+load => contador[1].ENA
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => registro.OUTPUTSELECT
+enable => contador.OUTPUTSELECT
+enable => contador.OUTPUTSELECT
+enable => contador.OUTPUTSELECT
+enable => contador.OUTPUTSELECT
+enable => final.IN1
+final <= final.DB_MAX_OUTPUT_PORT_TYPE
+e_p[0] => registro.DATAB
+e_p[1] => registro.DATAB
+e_p[2] => registro.DATAB
+e_p[3] => registro.DATAB
+e_p[4] => registro.DATAB
+e_p[5] => registro.DATAB
+e_p[6] => registro.DATAB
+e_p[7] => registro.DATAB
+s_s <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RS232|Control:i5
+clk => estado_act~1.DATAIN
+boton => estado_sig.OUTPUTSELECT
+boton => estado_sig.OUTPUTSELECT
+boton => estado_sig.OUTPUTSELECT
+boton => estado_sig.OUTPUTSELECT
+boton => estado_sig.OUTPUTSELECT
+boton => rst.IN0
+reset_n => rst.IN1
+reset_n => estado_act~3.DATAIN
+fin => estado_sig.OUTPUTSELECT
+fin => estado_sig.OUTPUTSELECT
+fin => estado_sig.OUTPUTSELECT
+fin => estado_sig.OUTPUTSELECT
+fin => estado_sig.OUTPUTSELECT
+en_cnt <= en_cnt.DB_MAX_OUTPUT_PORT_TYPE
+carga <= carga.DB_MAX_OUTPUT_PORT_TYPE
+en_reg <= en_reg.DB_MAX_OUTPUT_PORT_TYPE
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => estado_sig.OUTPUTSELECT
+co_cnt => en_reg.DATAB
+multip[0] <= multip.DB_MAX_OUTPUT_PORT_TYPE
+multip[1] <= multip.DB_MAX_OUTPUT_PORT_TYPE
+rst <= rst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RS232|DetectorFlanco:i6
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector2.IN2
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => estado_sig.OUTPUTSELECT
+e => Selector0.IN1
+reset_n => estado_act~3.DATAIN
+clk => estado_act~1.DATAIN
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

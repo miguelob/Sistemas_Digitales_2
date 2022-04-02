@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Top is
+port(
+	clk	: in std_logic;
+	reset_n	:in std_logic;
+	boton:	in std_logic;
+	datos:	out std_logic_vector (16 downto 0);
+	bits:		out std_logic_vector (7 downto 0));
+end Top;
+	
+architecture behavioral of Top is 
+
+
+
+begin --behavioral

@@ -1,0 +1,42 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BancoReg is
+port(
+	clk		: in std_logic;
+	DirA 		:	in std_logic_vector(2 downto 0);
+	DirB		:	in	std_logic_vector(2 downto 0);
+	DirEsc	:	in	std_logic_vector(2 downto 0);
+	DatoEsc	:	in	std_logic_vector(15 downto 0);
+	en_banco	:	in	std_logic;
+	A			:	out	std_logic_vector(15 downto 0);
+	B			:	out	std_logic_vector(15 downto 0));
+end BancoReg;
+
+architecture structural of BancoReg is
+	
+	signal en : std_logic_vector (7 downto 0);
+
+	component RegParPar16
+	port(
+	entrada	:	in std_logic_vector(15 downto 0);
+	salida	:	out std_logic_vector(15 downto 0);
+	clk		:	in  std_logic;
+	reset_n	:	in	std_logic;
+	enable	:	in	std_logic);
+	end component;
+	
+begin
+
+	for i in 0 to 7 generate
+	i_Registro: RegParPar16
+	port map(
+	entrada	=> 
+	salida	=>
+	clk		=> clk,
+	reset_n	=> reset_n,
+	enable	=> en(i));
+	end generate;
+	
+	with en
+

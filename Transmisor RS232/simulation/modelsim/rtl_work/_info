@@ -1,0 +1,295 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\practica2.v5\Pract2\simulation\modelsim
+Econtrol
+Z1 w1549285748
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\practica2.v5\Pract2\simulation\modelsim
+Z5 8C:/practica2.v5/Pract2/Control.vhd
+Z6 FC:/practica2.v5/Pract2/Control.vhd
+l0
+L4
+V_jFUNlPP7EVa55EcEAdDI3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1549357887.711000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/Control.vhd|
+Z10 !s107 C:/practica2.v5/Pract2/Control.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 _A_@Nfk8og0Hn[<F7CJR[1
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 7 control 0 22 _jFUNlPP7EVa55EcEAdDI3
+l21
+L17
+V@SICo4U1YUbMRSBg4cSeM1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 05@^DI@:eU>C_[R2F2bAK2
+!i10b 1
+Edetectorflanco
+Z13 w1548783032
+R2
+R3
+R4
+Z14 8C:/practica2.v5/Pract2/DetectorFlanco.vhd
+Z15 FC:/practica2.v5/Pract2/DetectorFlanco.vhd
+l0
+L4
+VIbF9k9?0Pce;0lZInZCbZ0
+R7
+31
+Z16 !s108 1549357888.228000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/DetectorFlanco.vhd|
+Z18 !s107 C:/practica2.v5/Pract2/DetectorFlanco.vhd|
+R11
+R12
+!s100 EaJ^``JcT3ZG<7=eQ=:750
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 14 detectorflanco 0 22 IbF9k9?0Pce;0lZInZCbZ0
+l15
+L12
+V50mIPV6P3i_LRYPTSzZNR0
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 gUc@9>RKdk4kKP1]3feHA3
+!i10b 1
+Emux
+Z19 w1548659702
+R2
+R3
+R4
+Z20 8C:/practica2.v5/Pract2/Mux.vhd
+Z21 FC:/practica2.v5/Pract2/Mux.vhd
+l0
+L4
+VZeJVUR5iGaRYMD]8lE7@m2
+R7
+31
+Z22 !s108 1549357887.193000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/Mux.vhd|
+Z24 !s107 C:/practica2.v5/Pract2/Mux.vhd|
+R11
+R12
+!s100 Cbdk4JD?:YR8RR:3^U]MK3
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 3 mux 0 22 ZeJVUR5iGaRYMD]8lE7@m2
+l14
+L13
+V:hA]@Ul>8Qj=`b3h5RQSR3
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 JkWH>833h06_Ud6oih33L2
+!i10b 1
+Eparidad
+Z25 w1548784166
+Z26 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z28 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z29 8C:/practica2.v5/Pract2/Paridad.vhd
+Z30 FC:/practica2.v5/Pract2/Paridad.vhd
+l0
+L6
+V;7^fQd1:Jhil^C[j32jJJ3
+R7
+31
+Z31 !s108 1549357886.691000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/Paridad.vhd|
+Z33 !s107 C:/practica2.v5/Pract2/Paridad.vhd|
+R11
+R12
+!s100 O][mg??TcBAo]R2>cQ^c33
+!i10b 1
+Abehavioural
+R26
+R27
+R28
+R2
+R3
+DEx4 work 7 paridad 0 22 ;7^fQd1:Jhil^C[j32jJJ3
+l16
+L15
+Vi8DoC0DZF@IU1h5>1BY5_1
+R7
+31
+R31
+R32
+R33
+R11
+R12
+!s100 MYMG6h[[KQz=BVf[3a6Eb2
+!i10b 1
+Eregparser
+Z34 w1549285762
+R28
+R2
+R3
+R4
+Z35 8C:/practica2.v5/Pract2/RegParSer.vhd
+Z36 FC:/practica2.v5/Pract2/RegParSer.vhd
+l0
+L5
+V>cTNTj:B[Y7ahJ3V?AXk21
+R7
+31
+Z37 !s108 1549357886.240000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/RegParSer.vhd|
+Z39 !s107 C:/practica2.v5/Pract2/RegParSer.vhd|
+R11
+R12
+!s100 eA<YM;OeEITJ3JK1E[=FO1
+!i10b 1
+Abehavioral
+R28
+R2
+R3
+DEx4 work 9 regparser 0 22 >cTNTj:B[Y7ahJ3V?AXk21
+l19
+L16
+Vhh;IfD@eQm4enjP8Indeo1
+R7
+31
+R37
+R38
+R39
+R11
+R12
+!s100 4H7:2AUBgA_NW=f1fUkPe2
+!i10b 1
+Eregparser_vhd_tst
+Z40 w1549357871
+R2
+R3
+R4
+Z41 8C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht
+Z42 FC:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht
+l0
+L30
+V`=d=G;cV=NTaK_TbL4`8;0
+!s100 aJ;?hzm[S6JnV`ijbO6@M2
+R7
+31
+!i10b 1
+Z43 !s108 1549357888.741000
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht|
+Z45 !s107 C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht|
+R11
+R12
+Aregparser_arch
+R2
+R3
+DEx4 work 17 regparser_vhd_tst 0 22 `=d=G;cV=NTaK_TbL4`8;0
+l53
+L32
+VV><aGoRF>[_[n?64=YkQP1
+!s100 NMb4`;Qk?iKMhKo1>?f@_0
+R7
+31
+!i10b 1
+R43
+R44
+R45
+R11
+R12
+Ers232
+Z46 w1549285698
+R2
+R3
+R4
+Z47 8C:/practica2.v5/Pract2/RS232.vhd
+Z48 FC:/practica2.v5/Pract2/RS232.vhd
+l0
+L4
+Van]^zH_cZJLd>^76LzfRz2
+R7
+31
+Z49 !s108 1549357885.757000
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/RS232.vhd|
+Z51 !s107 C:/practica2.v5/Pract2/RS232.vhd|
+R11
+R12
+!s100 ZT9MBMLoc5Rf<@8_Go<T[2
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 5 rs232 0 22 an]^zH_cZJLd>^76LzfRz2
+l83
+L13
+V=3ch]445nH[7glFR>9imh3
+R7
+31
+R49
+R50
+R51
+R11
+R12
+!s100 k@_3MloT4]8a>TUBfG[<93
+!i10b 1
+Etemporizadorc
+Z52 w1548659698
+R28
+R2
+R3
+R4
+Z53 8C:/practica2.v5/Pract2/TemporizadorC.vhd
+Z54 FC:/practica2.v5/Pract2/TemporizadorC.vhd
+l0
+L5
+VV4k8ozhJzfaiG2KTQn?WU1
+R7
+31
+Z55 !s108 1549357885.276000
+Z56 !s90 -reportprogress|300|-93|-work|work|C:/practica2.v5/Pract2/TemporizadorC.vhd|
+Z57 !s107 C:/practica2.v5/Pract2/TemporizadorC.vhd|
+R11
+R12
+!s100 Qgg1G=_G?cfdfl9l?N^Do2
+!i10b 1
+Abehavioral
+R28
+R2
+R3
+DEx4 work 13 temporizadorc 0 22 V4k8ozhJzfaiG2KTQn?WU1
+l16
+L13
+Vh;k?6NZnTG9KgIZ=XhXh:0
+R7
+31
+R55
+R56
+R57
+R11
+R12
+!s100 H_Pa2m5fhIGoQ04UY;nPL3
+!i10b 1

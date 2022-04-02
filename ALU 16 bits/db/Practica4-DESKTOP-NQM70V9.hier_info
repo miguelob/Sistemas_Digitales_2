@@ -1,0 +1,559 @@
+|ALU
+a[0] => SumadorRestador16Bits:i1.a[0]
+a[0] => Multi16Sin:i2.a[0]
+a[0] => Multi16Con:i3.a[0]
+a[0] => nand_op:i4.a[0]
+a[1] => SumadorRestador16Bits:i1.a[1]
+a[1] => Multi16Sin:i2.a[1]
+a[1] => Multi16Con:i3.a[1]
+a[1] => nand_op:i4.a[1]
+a[2] => SumadorRestador16Bits:i1.a[2]
+a[2] => Multi16Sin:i2.a[2]
+a[2] => Multi16Con:i3.a[2]
+a[2] => nand_op:i4.a[2]
+a[3] => SumadorRestador16Bits:i1.a[3]
+a[3] => Multi16Sin:i2.a[3]
+a[3] => Multi16Con:i3.a[3]
+a[3] => nand_op:i4.a[3]
+a[4] => SumadorRestador16Bits:i1.a[4]
+a[4] => Multi16Sin:i2.a[4]
+a[4] => Multi16Con:i3.a[4]
+a[4] => nand_op:i4.a[4]
+a[5] => SumadorRestador16Bits:i1.a[5]
+a[5] => Multi16Sin:i2.a[5]
+a[5] => Multi16Con:i3.a[5]
+a[5] => nand_op:i4.a[5]
+a[6] => SumadorRestador16Bits:i1.a[6]
+a[6] => Multi16Sin:i2.a[6]
+a[6] => Multi16Con:i3.a[6]
+a[6] => nand_op:i4.a[6]
+a[7] => SumadorRestador16Bits:i1.a[7]
+a[7] => Multi16Sin:i2.a[7]
+a[7] => Multi16Con:i3.a[7]
+a[7] => nand_op:i4.a[7]
+a[8] => SumadorRestador16Bits:i1.a[8]
+a[8] => Multi16Sin:i2.a[8]
+a[8] => Multi16Con:i3.a[8]
+a[8] => nand_op:i4.a[8]
+a[9] => SumadorRestador16Bits:i1.a[9]
+a[9] => Multi16Sin:i2.a[9]
+a[9] => Multi16Con:i3.a[9]
+a[9] => nand_op:i4.a[9]
+a[10] => SumadorRestador16Bits:i1.a[10]
+a[10] => Multi16Sin:i2.a[10]
+a[10] => Multi16Con:i3.a[10]
+a[10] => nand_op:i4.a[10]
+a[11] => SumadorRestador16Bits:i1.a[11]
+a[11] => Multi16Sin:i2.a[11]
+a[11] => Multi16Con:i3.a[11]
+a[11] => nand_op:i4.a[11]
+a[12] => SumadorRestador16Bits:i1.a[12]
+a[12] => Multi16Sin:i2.a[12]
+a[12] => Multi16Con:i3.a[12]
+a[12] => nand_op:i4.a[12]
+a[13] => SumadorRestador16Bits:i1.a[13]
+a[13] => Multi16Sin:i2.a[13]
+a[13] => Multi16Con:i3.a[13]
+a[13] => nand_op:i4.a[13]
+a[14] => SumadorRestador16Bits:i1.a[14]
+a[14] => Multi16Sin:i2.a[14]
+a[14] => Multi16Con:i3.a[14]
+a[14] => nand_op:i4.a[14]
+a[15] => SumadorRestador16Bits:i1.a[15]
+a[15] => Multi16Sin:i2.a[15]
+a[15] => Multi16Con:i3.a[15]
+a[15] => nand_op:i4.a[15]
+b[0] => SumadorRestador16Bits:i1.b[0]
+b[0] => Multi16Sin:i2.b[0]
+b[0] => Multi16Con:i3.b[0]
+b[0] => nand_op:i4.b[0]
+b[1] => SumadorRestador16Bits:i1.b[1]
+b[1] => Multi16Sin:i2.b[1]
+b[1] => Multi16Con:i3.b[1]
+b[1] => nand_op:i4.b[1]
+b[2] => SumadorRestador16Bits:i1.b[2]
+b[2] => Multi16Sin:i2.b[2]
+b[2] => Multi16Con:i3.b[2]
+b[2] => nand_op:i4.b[2]
+b[3] => SumadorRestador16Bits:i1.b[3]
+b[3] => Multi16Sin:i2.b[3]
+b[3] => Multi16Con:i3.b[3]
+b[3] => nand_op:i4.b[3]
+b[4] => SumadorRestador16Bits:i1.b[4]
+b[4] => Multi16Sin:i2.b[4]
+b[4] => Multi16Con:i3.b[4]
+b[4] => nand_op:i4.b[4]
+b[5] => SumadorRestador16Bits:i1.b[5]
+b[5] => Multi16Sin:i2.b[5]
+b[5] => Multi16Con:i3.b[5]
+b[5] => nand_op:i4.b[5]
+b[6] => SumadorRestador16Bits:i1.b[6]
+b[6] => Multi16Sin:i2.b[6]
+b[6] => Multi16Con:i3.b[6]
+b[6] => nand_op:i4.b[6]
+b[7] => SumadorRestador16Bits:i1.b[7]
+b[7] => Multi16Sin:i2.b[7]
+b[7] => Multi16Con:i3.b[7]
+b[7] => nand_op:i4.b[7]
+b[8] => SumadorRestador16Bits:i1.b[8]
+b[8] => Multi16Sin:i2.b[8]
+b[8] => Multi16Con:i3.b[8]
+b[8] => nand_op:i4.b[8]
+b[9] => SumadorRestador16Bits:i1.b[9]
+b[9] => Multi16Sin:i2.b[9]
+b[9] => Multi16Con:i3.b[9]
+b[9] => nand_op:i4.b[9]
+b[10] => SumadorRestador16Bits:i1.b[10]
+b[10] => Multi16Sin:i2.b[10]
+b[10] => Multi16Con:i3.b[10]
+b[10] => nand_op:i4.b[10]
+b[11] => SumadorRestador16Bits:i1.b[11]
+b[11] => Multi16Sin:i2.b[11]
+b[11] => Multi16Con:i3.b[11]
+b[11] => nand_op:i4.b[11]
+b[12] => SumadorRestador16Bits:i1.b[12]
+b[12] => Multi16Sin:i2.b[12]
+b[12] => Multi16Con:i3.b[12]
+b[12] => nand_op:i4.b[12]
+b[13] => SumadorRestador16Bits:i1.b[13]
+b[13] => Multi16Sin:i2.b[13]
+b[13] => Multi16Con:i3.b[13]
+b[13] => nand_op:i4.b[13]
+b[14] => SumadorRestador16Bits:i1.b[14]
+b[14] => Multi16Sin:i2.b[14]
+b[14] => Multi16Con:i3.b[14]
+b[14] => nand_op:i4.b[14]
+b[15] => SumadorRestador16Bits:i1.b[15]
+b[15] => Multi16Sin:i2.b[15]
+b[15] => Multi16Con:i3.b[15]
+b[15] => nand_op:i4.b[15]
+op_alu[0] => ~NO_FANOUT~
+op_alu[1] => ~NO_FANOUT~
+op_alu[2] => ~NO_FANOUT~
+op_alu[3] => ~NO_FANOUT~
+ov <= ov.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+z <= comb.DB_MAX_OUTPUT_PORT_TYPE
+res[0] <= res[0].DB_MAX_OUTPUT_PORT_TYPE
+res[1] <= res[1].DB_MAX_OUTPUT_PORT_TYPE
+res[2] <= res[2].DB_MAX_OUTPUT_PORT_TYPE
+res[3] <= res[3].DB_MAX_OUTPUT_PORT_TYPE
+res[4] <= res[4].DB_MAX_OUTPUT_PORT_TYPE
+res[5] <= res[5].DB_MAX_OUTPUT_PORT_TYPE
+res[6] <= res[6].DB_MAX_OUTPUT_PORT_TYPE
+res[7] <= res[7].DB_MAX_OUTPUT_PORT_TYPE
+res[8] <= res[8].DB_MAX_OUTPUT_PORT_TYPE
+res[9] <= res[9].DB_MAX_OUTPUT_PORT_TYPE
+res[10] <= res[10].DB_MAX_OUTPUT_PORT_TYPE
+res[11] <= res[11].DB_MAX_OUTPUT_PORT_TYPE
+res[12] <= res[12].DB_MAX_OUTPUT_PORT_TYPE
+res[13] <= res[13].DB_MAX_OUTPUT_PORT_TYPE
+res[14] <= res[14].DB_MAX_OUTPUT_PORT_TYPE
+res[15] <= res[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1
+a[0] => Sumador1Bit:GenSum:0:i_Sumador1Bit.a_i
+a[1] => Sumador1Bit:GenSum:1:i_Sumador1Bit.a_i
+a[2] => Sumador1Bit:GenSum:2:i_Sumador1Bit.a_i
+a[3] => Sumador1Bit:GenSum:3:i_Sumador1Bit.a_i
+a[4] => Sumador1Bit:GenSum:4:i_Sumador1Bit.a_i
+a[5] => Sumador1Bit:GenSum:5:i_Sumador1Bit.a_i
+a[6] => Sumador1Bit:GenSum:6:i_Sumador1Bit.a_i
+a[7] => Sumador1Bit:GenSum:7:i_Sumador1Bit.a_i
+a[8] => Sumador1Bit:GenSum:8:i_Sumador1Bit.a_i
+a[9] => Sumador1Bit:GenSum:9:i_Sumador1Bit.a_i
+a[10] => Sumador1Bit:GenSum:10:i_Sumador1Bit.a_i
+a[11] => Sumador1Bit:GenSum:11:i_Sumador1Bit.a_i
+a[12] => Sumador1Bit:GenSum:12:i_Sumador1Bit.a_i
+a[13] => Sumador1Bit:GenSum:13:i_Sumador1Bit.a_i
+a[14] => Sumador1Bit:GenSum:14:i_Sumador1Bit.a_i
+a[15] => Sumador1Bit:GenSum:15:i_Sumador1Bit.a_i
+b[0] => b_i[0].IN0
+b[1] => b_i[1].IN0
+b[2] => b_i[2].IN0
+b[3] => b_i[3].IN0
+b[4] => b_i[4].IN0
+b[5] => b_i[5].IN0
+b[6] => b_i[6].IN0
+b[7] => b_i[7].IN0
+b[8] => b_i[8].IN0
+b[9] => b_i[9].IN0
+b[10] => b_i[10].IN0
+b[11] => b_i[11].IN0
+b[12] => b_i[12].IN0
+b[13] => b_i[13].IN0
+b[14] => b_i[14].IN0
+b[15] => b_i[15].IN0
+s_r => b_i[15].IN1
+s_r => b_i[14].IN1
+s_r => b_i[13].IN1
+s_r => b_i[12].IN1
+s_r => b_i[11].IN1
+s_r => b_i[10].IN1
+s_r => b_i[9].IN1
+s_r => b_i[8].IN1
+s_r => b_i[7].IN1
+s_r => b_i[6].IN1
+s_r => b_i[5].IN1
+s_r => b_i[4].IN1
+s_r => b_i[3].IN1
+s_r => b_i[2].IN1
+s_r => b_i[1].IN1
+s_r => b_i[0].IN1
+s_r => Sumador1Bit:GenSum:0:i_Sumador1Bit.c_i
+s[0] <= Sumador1Bit:GenSum:0:i_Sumador1Bit.s_i
+s[1] <= Sumador1Bit:GenSum:1:i_Sumador1Bit.s_i
+s[2] <= Sumador1Bit:GenSum:2:i_Sumador1Bit.s_i
+s[3] <= Sumador1Bit:GenSum:3:i_Sumador1Bit.s_i
+s[4] <= Sumador1Bit:GenSum:4:i_Sumador1Bit.s_i
+s[5] <= Sumador1Bit:GenSum:5:i_Sumador1Bit.s_i
+s[6] <= Sumador1Bit:GenSum:6:i_Sumador1Bit.s_i
+s[7] <= Sumador1Bit:GenSum:7:i_Sumador1Bit.s_i
+s[8] <= Sumador1Bit:GenSum:8:i_Sumador1Bit.s_i
+s[9] <= Sumador1Bit:GenSum:9:i_Sumador1Bit.s_i
+s[10] <= Sumador1Bit:GenSum:10:i_Sumador1Bit.s_i
+s[11] <= Sumador1Bit:GenSum:11:i_Sumador1Bit.s_i
+s[12] <= Sumador1Bit:GenSum:12:i_Sumador1Bit.s_i
+s[13] <= Sumador1Bit:GenSum:13:i_Sumador1Bit.s_i
+s[14] <= Sumador1Bit:GenSum:14:i_Sumador1Bit.s_i
+s[15] <= Sumador1Bit:GenSum:15:i_Sumador1Bit.s_i
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+ov <= ov.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:0:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:1:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:2:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:3:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:4:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:5:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:6:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:7:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:8:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:9:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:10:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:11:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:12:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:13:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:14:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|SumadorRestador16Bits:i1|Sumador1Bit:\GenSum:15:i_Sumador1Bit
+a_i => s_i.IN0
+a_i => c_i_mas_1.IN0
+b_i => s_i.IN1
+b_i => c_i_mas_1.IN1
+c_i => s_i.IN1
+c_i => c_i_mas_1.IN1
+s_i <= s_i.DB_MAX_OUTPUT_PORT_TYPE
+c_i_mas_1 <= c_i_mas_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Multi16Sin:i2
+a[0] => Mult0.IN15
+a[1] => Mult0.IN14
+a[2] => Mult0.IN13
+a[3] => Mult0.IN12
+a[4] => Mult0.IN11
+a[5] => Mult0.IN10
+a[6] => Mult0.IN9
+a[7] => Mult0.IN8
+a[8] => Mult0.IN7
+a[9] => Mult0.IN6
+a[10] => Mult0.IN5
+a[11] => Mult0.IN4
+a[12] => Mult0.IN3
+a[13] => Mult0.IN2
+a[14] => Mult0.IN1
+a[15] => Mult0.IN0
+b[0] => Mult0.IN31
+b[1] => Mult0.IN30
+b[2] => Mult0.IN29
+b[3] => Mult0.IN28
+b[4] => Mult0.IN27
+b[5] => Mult0.IN26
+b[6] => Mult0.IN25
+b[7] => Mult0.IN24
+b[8] => Mult0.IN23
+b[9] => Mult0.IN22
+b[10] => Mult0.IN21
+b[11] => Mult0.IN20
+b[12] => Mult0.IN19
+b[13] => Mult0.IN18
+b[14] => Mult0.IN17
+b[15] => Mult0.IN16
+p[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[8] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[9] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[10] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[11] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[12] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[13] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[14] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[15] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+ov <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+co <= <GND>
+
+
+|ALU|Multi16Con:i3
+a[0] => Mult0.IN15
+a[1] => Mult0.IN14
+a[2] => Mult0.IN13
+a[3] => Mult0.IN12
+a[4] => Mult0.IN11
+a[5] => Mult0.IN10
+a[6] => Mult0.IN9
+a[7] => Mult0.IN8
+a[8] => Mult0.IN7
+a[9] => Mult0.IN6
+a[10] => Mult0.IN5
+a[11] => Mult0.IN4
+a[12] => Mult0.IN3
+a[13] => Mult0.IN2
+a[14] => Mult0.IN1
+a[15] => Mult0.IN0
+b[0] => Mult0.IN31
+b[1] => Mult0.IN30
+b[2] => Mult0.IN29
+b[3] => Mult0.IN28
+b[4] => Mult0.IN27
+b[5] => Mult0.IN26
+b[6] => Mult0.IN25
+b[7] => Mult0.IN24
+b[8] => Mult0.IN23
+b[9] => Mult0.IN22
+b[10] => Mult0.IN21
+b[11] => Mult0.IN20
+b[12] => Mult0.IN19
+b[13] => Mult0.IN18
+b[14] => Mult0.IN17
+b[15] => Mult0.IN16
+p[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[8] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[9] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[10] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[11] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[12] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[13] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[14] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+p[15] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+ov <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+co <= <GND>
+
+
+|ALU|nand_op:i4
+a[0] => res.IN0
+a[1] => res.IN0
+a[2] => res.IN0
+a[3] => res.IN0
+a[4] => res.IN0
+a[5] => res.IN0
+a[6] => res.IN0
+a[7] => res.IN0
+a[8] => res.IN0
+a[9] => res.IN0
+a[10] => res.IN0
+a[11] => res.IN0
+a[12] => res.IN0
+a[13] => res.IN0
+a[14] => res.IN0
+a[15] => res.IN0
+b[0] => res.IN1
+b[1] => res.IN1
+b[2] => res.IN1
+b[3] => res.IN1
+b[4] => res.IN1
+b[5] => res.IN1
+b[6] => res.IN1
+b[7] => res.IN1
+b[8] => res.IN1
+b[9] => res.IN1
+b[10] => res.IN1
+b[11] => res.IN1
+b[12] => res.IN1
+b[13] => res.IN1
+b[14] => res.IN1
+b[15] => res.IN1
+res[0] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[1] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[2] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[3] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[4] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[5] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[6] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[7] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[8] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[9] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[10] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[11] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[12] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[13] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[14] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[15] <= res.DB_MAX_OUTPUT_PORT_TYPE
+ov <= <GND>
+co <= <GND>
+
+

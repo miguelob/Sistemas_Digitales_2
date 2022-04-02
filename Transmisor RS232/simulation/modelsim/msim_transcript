@@ -1,0 +1,99 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Pract2_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/practica2.v5/Pract2/TemporizadorC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TemporizadorC
+# -- Compiling architecture behavioral of TemporizadorC
+# vcom -93 -work work {C:/practica2.v5/Pract2/RS232.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RS232
+# -- Compiling architecture structural of RS232
+# vcom -93 -work work {C:/practica2.v5/Pract2/RegParSer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RegParSer
+# -- Compiling architecture behavioral of RegParSer
+# vcom -93 -work work {C:/practica2.v5/Pract2/Paridad.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Paridad
+# -- Compiling architecture behavioural of Paridad
+# vcom -93 -work work {C:/practica2.v5/Pract2/Mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux
+# -- Compiling architecture behavioral of Mux
+# vcom -93 -work work {C:/practica2.v5/Pract2/Control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Control
+# -- Compiling architecture behavioral of Control
+# vcom -93 -work work {C:/practica2.v5/Pract2/DetectorFlanco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DetectorFlanco
+# -- Compiling architecture behavioral of DetectorFlanco
+# 
+# vcom -93 -work work {C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegParSer_vhd_tst
+# -- Compiling architecture RegParSer_arch of RegParSer_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  RegParSer_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps RegParSer_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.regparser_vhd_tst(regparser_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.regparser(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /regparser_vhd_tst/i1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /regparser_vhd_tst/i1
+# ** Failure: Fin de la simulacion
+#    Time: 1180 ns  Iteration: 0  Process: /regparser_vhd_tst/always File: C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht
+# Break in Process always at C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht line 99
+# Simulation Breakpoint: Break in Process always at C:/practica2.v5/Pract2/simulation/modelsim/RegParSer.vht line 99
+# MACRO ./Pract2_run_msim_rtl_vhdl.do PAUSED at line 23

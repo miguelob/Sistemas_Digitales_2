@@ -1,0 +1,15 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Pract2/TemporizadorC.vhd}
+vcom -93 -work work {C:/Pract2/RS232.vhd}
+vcom -93 -work work {C:/Pract2/RegParSer.vhd}
+vcom -93 -work work {C:/Pract2/Paridad.vhd}
+vcom -93 -work work {C:/Pract2/Mux.vhd}
+vcom -93 -work work {C:/Pract2/Control.vhd}
+vcom -93 -work work {C:/Pract2/DetectorFlanco.vhd}
+
